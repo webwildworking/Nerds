@@ -1,0 +1,280 @@
+/*FONTS*/
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+/*GLOBAL*/
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.button {
+	font: inherit;
+	line-height: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	background-color: #fb565a;
+	display: inline-block;
+	padding: 17px 40px;
+	border-radius: 2px;
+}
+/*HEADER*/
+
+.main-header {
+	background-color: #eee;
+	padding-top: 49px;
+	margin-bottom: 80px;
+}
+
+.header-title {
+	margin: 0;
+	width: 160px;
+	padding-bottom: 15px;
+}
+
+.header-title img:hover,
+.header-title img:focus {
+	opacity: 0.8;
+}
+
+.header-title img:active {
+	opacity: 0.3;
+}
+
+
+.header-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-navigation,
+.user-navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.main-navigation a,
+.user-navigation a {
+	display: block;
+	padding: 10px 0;
+	line-height: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.main-navigation {
+	margin-left: -44px;
+}
+
+.main-navigation li {
+	
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	color: #fb565a;
+}
+
+.main-navigation a:active,
+.user-navigation a:active {
+	color: #a6a6a6;
+}
+
+
+.main-navigation {
+	width: 440px;
+	justify-content: space-between;
+}
+
+.user-navigation {
+	max-width: 120px;
+}
+
+.user-navigation a {
+	padding-left: 41px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.user-navigation a::before {
+	content: "";
+
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: 15px;
+	background-image: url(../img/svg/cart-icon.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.3
+}
+
+.header-slider {
+	position: relative;
+}
+
+
+.slider {
+	min-height: 413px;
+}
+
+.slider-content {
+	width: 514px;
+}
+
+.slider-promo {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	margin-bottom: 25px;
+	display: block;
+	padding-top: 61px;
+}
+
+.slider-description {
+	margin: 0;
+	margin-bottom: 40px;
+	color: #283136;
+}
+
+.slider-button {
+	width: 239px;
+	box-sizing: border-box;
+}
+
+.slider-one {
+	background-image: url(../img/slider/slide1.png);
+	background-repeat: no-repeat;
+	background-position: 93% 15%;
+}
+
+.slider-navigation {
+	position: absolute;
+	display: flex;
+	width: 88px;
+	justify-content: space-between;
+	left: 46%;
+	top: 73%;
+}
+
+.slider-navigation-button {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: none;
+}
+
+.slider-navigation-button:hover,
+.slider-navigation-button:focus {
+	outline: none;
+}
+
+.slider-navigation-button:active::before {
+	content: "";
+
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	background-color: #c1c1c1;
+}
+
+.slider-navigation-button:active::after {
+	content: "";
+
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	position: absolute;
+	left: 7px;
+	top: 7px;
+	background-color: #fff;
+}
+
+
+/*MAIN*/
+
+/*services*/
+
+.services-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+.services-item {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+
+.services-item img {
+	order: -1;
+}
+
+.services-item .button {
+	align-self: flex-start;
+}
